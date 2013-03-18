@@ -16,11 +16,11 @@
 
 body {
 	font: 300 22px/25px "Helvetica Neue", Helvetica, sans-serif;
-
-	margin: 150px 30%;
+	padding: 150px 30%;
 	background: #FF6D21;
 	color: #fff;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+	overflow: hidden;
 }
 
 section {
@@ -33,19 +33,12 @@ ul {
 
 a {
 	color: white;
-	opacity: 0.8;
 	text-decoration: none;
-	border-bottom: 1px solid rgba(255,255,255,0.8);
-	
-			-webkit-transition: opacity .3s;
-		-moz-transition: opacity .3s;
-		-ms-transition: opacity .3s;
-		-o-transition: opacity .3s;
-		transition: opacity .3s;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
 }
 
 a:hover{
-	opacity: 1.0;
+		border-bottom: 1px solid rgba(255,255,255,1.0);
 }
 
 li {
@@ -53,7 +46,6 @@ li {
 }
 
 h1 {
-	
 	font-weight: 500;
 }
 
@@ -64,7 +56,7 @@ h1, h2 {
 
 h2 {
 	font-weight: 300;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 h3 {
@@ -87,16 +79,37 @@ h3 {
 		color: #fff;
 		float: left;
 		display: inline-block;
-		margin-right: 25px;
+		margin-right: 20px;
 		margin-bottom: 15px;
 
 	}
 	
 .social li a{
 		border: none;
-		opacity: .8;	   
+		opacity: .8;
+	   
+		-webkit-transition: opacity .3s;
+		-moz-transition: opacity .3s;
+		-ms-transition: opacity .3s;
+		-o-transition: opacity .3s;
+		transition: opacity .3s;
 }
 
 .social li a:hover {
 	opacity: 1;
+}
+
+.social li:last-child {
+	margin-right: 0;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		padding: 44px 10%;
+	}
+	
+	h2 {
+		font-size: 120%;
+	}
 }
