@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+::selection { background: rgba(0,0,0,.2); }
+::-moz-selection { background: rgba(0,0,0,.2); }
+::-webkit-selection { background: rgba(0,0,0,.2); }
+
+body {
+	font: 300 22px/25px "Helvetica Neue", Helvetica, sans-serif;
+
+	margin: 150px 30%;
+	background: #FF6D21;
+	color: #fff;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+}
+
+section {
+	margin-top: 20px;
+}
+
+ul {
+	margin-top: 10px;
+}
+
+a {
+	color: white;
+	opacity: 0.8;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255,0.8);
+	
+			-webkit-transition: opacity .3s;
+		-moz-transition: opacity .3s;
+		-ms-transition: opacity .3s;
+		-o-transition: opacity .3s;
+		transition: opacity .3s;
+}
+
+a:hover{
+	opacity: 1.0;
+}
+
+li {
+	margin: 10px 0px;
+}
+
+h1 {
+	
+	font-weight: 500;
+}
+
+h1, h2 {
+	font-size: 150%;
+	line-height: 125%;
+}
+
+h2 {
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+h3 {
+	font-size: 110%;
+	line-height: 120%;
+	font-weight: 4	00;	
+}
+
+
+/**
+ * Social services.
+ */
+
+.social {
+	list-style: none;
+	margin-top: 40px;
+}
+
+.social li {
+		color: #fff;
+		float: left;
+		display: inline-block;
+		margin-right: 25px;
+		margin-bottom: 15px;
+
+	}
+	
+.social li a{
+		border: none;
+		opacity: .8;	   
+}
+
+.social li a:hover {
+	opacity: 1;
+}
